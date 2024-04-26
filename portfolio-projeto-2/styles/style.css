@@ -7,43 +7,89 @@
 body{
     background-color: #000000;
     color: #f6f6f6;
-    height: 100vh;
     box-sizing: border-box;
+}
+.cabecalho{
+    display: flex;
+    padding: 3% 0 0 8%;     
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}   
+.cabecalho__menu__links{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #22D4FD;
+    padding: 4px;
+}
+.cabecalho__menu__links:hover{
+    color: #ffffff;
 }
 .apresentacao{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 8%;
+    gap: 82px;
 }
-.apresentacao__grupo{
+.apresentacao__conteudo{
     width: 593px;
     display: flex;
     flex-direction: column ;
-    gap: 25px 0;
+    gap: 28px;
 }
-.apresentacao__grupo__titulo-tamanho{
+.apresentacao__conteudo__titulo{
     font-family: 'Krona One', sans-serif;
     font-size: 24px;
 }
-.apresentacao__grupo__texto-tamanho{
+.apresentacao__conteudo__texto{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
-.apresentacao__grupo__titulo-destaque, .apresentacao__grupo__texto-destaque{
+.apresentacao__conteudo__titulo-destaque, .apresentacao__conteudo__texto-destaque{
     color: #22D4FD;
 }
-.botao{
+.apresentacao__botao__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.apresentacao__botao{
     display: flex;
     justify-content: space-between;
-}
-.botao__links{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}   
+.apresentacao__botao__links{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    color: #000000;
-    background-color: #22D4FD;
-    padding: 16px;
-    border-radius: 16px;
-    width: 230px;
+    color: #F6F6F6;
+    padding: 14px;
+    border: solid 2px #22D4FD;
+    border-radius: 8px;
+    width: 378px;
     text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.apresentacao__botao__links:hover{
+    background-color: #272727;
+    border-color: #f6f6f6; 
+}
+.rodape{
+    padding: 18px;
+    background-color: #22D4FD;
+    color: #000000;
+}
+.rodape__texto{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
 }
