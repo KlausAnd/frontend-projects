@@ -25,7 +25,7 @@ body{
 .cabecalho__menu__links{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--cor-secundaria);
     padding: 4px;
@@ -48,11 +48,11 @@ body{
 }
 .apresentacao__conteudo__titulo{
     font-family: 'Krona One', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
 }  
 .apresentacao__conteudo__texto{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .apresentacao__conteudo__titulo-destaque, .apresentacao__conteudo__texto-destaque{
     color: var(--cor-secundaria);
@@ -60,7 +60,7 @@ body{
 .apresentacao__botao__subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .apresentacao__botao{
     display: flex;
