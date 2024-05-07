@@ -1,0 +1,11 @@
+.topico{
+    display: flex;
+    align-items: center;
+}
+.conteudo__container{
+    display: flex;
+}
+.topico__conteudo{
+    display: flex;
+    flex-direction: column;
+}
