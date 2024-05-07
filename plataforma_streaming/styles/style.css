@@ -111,7 +111,7 @@ body{
 .dispositivos{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     gap: 2.5rem;
 }
 
@@ -121,15 +121,31 @@ body{
     font-weight: 700;
 }
 
+.dispositivos__lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
 
-.dispositivos__legenda{
+.itens__legenda{
     color: var(--cor-primaria);
     font-size: 16px;
-    text-align: center;
+    text-align:center;
 }
 
 .rodape{
-    margin-top: auto;
+    margin: 8rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
 }
 
 .rodape__lista__itens{
@@ -139,5 +155,5 @@ body{
 
 .rodape__paragrafo{
     color: var(--cor-secundaria);
-    font-size: 14px;
+    font-size: 14px;    
 }
