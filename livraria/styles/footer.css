@@ -1,0 +1,10 @@
+.rodape{
+    border-top: solid 1px #858585;
+    padding: 16px 0 12px 0;
+    margin: 8% 4%;
+}
+
+.rodape__lista{
+    display: none;
+}
+

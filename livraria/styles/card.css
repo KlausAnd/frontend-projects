@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    align-items: center;
+    margin: 6%;
+    gap: 1rem;
+    background-color: var(--cor-section-padrao);
+    padding: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+
+}
+
+.conteudo__destaque{
+    color: var(--cor-texto-destaque);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.conteudo__titulo{
+    background: var(--cor-section-destaque);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.conteudo__container{
+    display: flex;
+    gap: 1rem;  
+}
+
+.conteudo__botao{
+    background-color: var(--cor-texto-destaque);
+    padding: 1rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-section-padrao);
+    margin-top: 1rem;
+    width: 60%;
+    text-align: center;
+    font-weight: 700px;
+}

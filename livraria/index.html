@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Livraria</title>
 </head>
@@ -53,15 +54,29 @@
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
-    <section class="lancamentos">
-        <h2 class="lancamentos__destaque">ÚLTIMOS LANÇAMENTOS</h2>
-        <DIV class="CARROSEL">
-
-        </DIV>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="Apache Kafka e Spring Boot"></div>
+        <div class="swiper-slide"><img src="./assets/Construct2.svg" alt="Construct 2"></div>
+        <div class="swiper-slide"><img src="./assets/Nodejs.svg" alt="Node.js"></div>
+        <div class="swiper-slide"><img src="./assets/Liderança.svg" alt="Liderança em Design"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     </section>  
 
-    <section class="topico">
-        <div class="topico__conteudo">
+    <section class="card">
+        <div class="card__conteudo">
             <h2 class="conteudo__destaque">Talvez você também se interesse por...</h2>
             <h2 class="conteudo__titulo">Angular 11 e Firebase </h2>
             <p class="conteudo__descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
@@ -70,62 +85,83 @@
                 <img src="./assets/Sacola.svg" alt="Adicionar ao carrinho">
             </div>
         </div>
-        <div class="topico">
+        <div class="card__conteudo">
             <img src="./assets/angular.svg" alt="Angular 11 e Firebase">
-            <a href="#">Saiba mais</a>
+            <a href="#" class="conteudo__botao">Saiba mais</a>
         </div>
     </section>
 
-    <section class="vendidos">
-        <h2 class="vendidos__destaque">MAIS VENDIDOS</h2>
-        <DIV class="CARROSEL">
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+        <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./assets/MEAN.svg" alt="MEAN"></div>
+        <div class="swiper-slide"><img src="./assets/UX.svg" alt="UX"></div>
+        <div class="swiper-slide"><img src="./assets/ReactNative.svg" alt="React Native"></div>
+        <div class="swiper-slide"><img src="./assets/Tuning.svg" alt="Tuning SQL"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+    </section>
 
-        </DIV>
+    <section class="card">
+        <div class="card__conteudo">
+            <div class="conteudo__avaliacao">
+                <img src="./assets/star.svg">
+                <img src="./assets/star.svg">
+                <img src="./assets/star.svg">
+                <img src="./assets/star.svg">
+                <img src="./assets/star.svg">
+            </div>
+            <h2 class="conteudo__destaque">Autora do mês</h2>
+            <h2 class="conteudo__titulo">Juliana Agarikov</h2>
+            <p class="conteudo__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+        </div>
+        <div class="card__conteudo">
+            <img src="./assets/escritora.svg" alt="Juliana Agarikov">
+            <a href="#" class="conteudo__botao">Saiba mais</a>
+        </div>
     </section>
 
     <section class="topico">
-        <div class="topico__conteudo">
-            <h2 class="topico__destaque">Autora do mês</h2>
-            <h2 class="topico__titulo">Juliana Agarikov</h2>
-            <p class="topico__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-        </div>
-        <div class="topico__conteudo">
-            <img src="./assets/escritora.svg" alt="Juliana Agarikov">
-            <a href="#">Saiba mais</a>
-        </div>
+        <h2 class="topico__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topico__lista">
+                <li class="lista__item"><a href="#" class="lista__link">Marketing Digital</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Android</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Agile</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Startups</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">HTML & CSS</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Python</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">OO</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Java</a></li>
+            </ul>
     </section>
 
-    <section class="visitados">
-        <h2 class="visitados__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <div class="visitados__lista">
-            <a href="#" class="lista__item">Android</a>
-            <a href="#" class="lista__item">Marketing Digital</a>
-            <a href="#" class="lista__item">Agile</a>
-            <a href="#" class="lista__item">Startups</a>
-            <a href="#" class="lista__item">HTML & CSS</a>
-            <a href="#" class="lista__item">Python</a>
-            <a href="#" class="lista__item">OO</a>
-            <a href="#" class="lista__item">Java</a>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <h2>Fique por dentro das novidades!</h2>
-        <p>Atualizações de e-books, novos livros, promoções e outros.</p>
-        <input type="email" class="rodape__email" placeholder="Cadastre seu e-mail" >
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" class="contato__email" placeholder="Cadastre seu e-mail" >
     </section>
 
     <footer class="rodape">
         <h3 class="rodape__texto">Grupo Alura</h3>
         <div>
-            <ul>
+            <ul class="rodape__lista">
                 <p>EDUCAÇÃO </p>
                 <li>Caelum</li>
                 <li>Casa do código</li>
             </ul>
         </div>
         <div>
-            <ul>
+            <ul class="rodape__lista">
                 <P>EDUCAÇÃO ONLINE</P>
                 <li>Alura</li>
                 <li>Alura Para Empresas </li>
@@ -137,7 +173,7 @@
             </ul>
         </div>
         <div>
-            <ul>
+            <ul class="rodape__lista">
                 <P>COMUNIDADE</P>
                 <li>Hipsters ponto Tech</li>
                 <li>Scuba Dev</li>
@@ -149,5 +185,18 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',   
+                type: 'bullets',
+            },
+        });
+    </script>
+
 </body>
 </html> 
