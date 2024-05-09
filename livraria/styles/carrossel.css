@@ -1,10 +1,11 @@
 .carrossel__titulo{
-    padding: 1.25rem 0 0.5rem 0;
+    padding: 1.5rem 0 1rem 0;
     text-align: center;
     font-family: var(--fonte-principal);
     color: var(--cor-texto-destaque);
     font-weight: 700;
     background-color: var(--cor-section-padrao);
+
 }
 
 .swiper{
@@ -22,4 +23,66 @@
 
 .swiper-pagination{
     position: initial;
+}
+
+.card{
+    background-color: var(--cor-section-padrao);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 10px;
+    display: flex;
+    margin: 6%;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1.5rem 0;
+}
+
+.card__conteudo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conteudo__destaque{
+    color: var(--cor-texto-destaque);
+    font-weight: 700;
+}
+
+.conteudo__titulo{
+    background: var(--cor-section-destaque);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    font-weight: 700;
+}
+
+.conteudo__descricao{
+    color: var(--cor-texto);
+}
+
+    .card__imagem{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+.imagem__botao{
+    background-color: var(--cor-texto-destaque);
+    font-weight: 700;
+    color: var(--cor-section-padrao);
+    text-align: center;
+    padding: 8px;
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        
+    }
+}
+
+@media screen and (min-width: 1728px){
+    
 }
