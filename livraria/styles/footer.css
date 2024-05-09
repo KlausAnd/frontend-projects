@@ -19,3 +19,9 @@
         gap: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1366px){
+    .rodape{
+        margin: 6% 4% 0 4%;
+    }
+}
