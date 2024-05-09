@@ -28,61 +28,98 @@
 .card{
     background-color: var(--cor-section-padrao);
     box-shadow: 0px 4px 4px 0px #00000040;
-    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card__descricao{
     display: flex;
-    margin: 6%;
-    gap:1rem;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 0 1.5rem 0;
+    margin-bottom: 0.5em;
+    gap: 12px   ;
 }
 
-.card__conteudo{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 1.5rem;
+.descricao{
+    gap: 1rem;
 }
 
-.conteudo__destaque{
+.descricao__titulo{
     color: var(--cor-texto-destaque);
     font-weight: 700;
 }
 
-.conteudo__titulo{
+.descricao__titulo-livro{
     background: var(--cor-section-destaque);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; 
-    font-weight: 700;
+    background-clip: text;      
+    margin: 0.5em 0;
 }
 
-.conteudo__descricao{
+.descricao__texto{
     color: var(--cor-texto);
 }
 
-    .card__imagem{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
+.descricao__imagem{
+    display: flex;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{    
+    display: flex;
+    align-items: center;
+}
+
+.botoes__item{
+    margin: 0.5rem;
+}
+
+.botoes__secreto{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    padding: 1rem;
     }
 
-.imagem__botao{
+.botoes__link{
     background-color: var(--cor-texto-destaque);
-    font-weight: 700;
     color: var(--cor-section-padrao);
-    text-align: center;
-    padding: 8px;
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+}
+@media screen and (min-width: 1024px){
+    .descricao{
+        margin: 10% 0;
+    }
+.descricao__titulo{
+    font-size: 24px;
+}
+.descricao__titulo-livro{
+    font-size: 22px;
 }
 
-@media screen and (min-width: 1024px){
-    .card{
-        
+    .descricao__texto{
+        font-size: 18px;
     }
 }
 
-@media screen and (min-width: 1728px){
-    
+@media screen and (min-width: 1366px){
+    .card__descricao{
+        justify-content: space-evenly;
+    }
+    .descricao__imagem{
+        width: 20%;
+        height: auto;
+    }
+    .card__botoes{
+        justify-content: start;
+    }
+    .botoes__link{
+        padding: 22px;
+        border-radius: 10px;
+    }
 }
